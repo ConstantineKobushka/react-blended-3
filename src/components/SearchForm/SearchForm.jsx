@@ -1,6 +1,8 @@
-import { FiSearch } from 'react-icons/fi';
-import styles from './SearchForm.module.css';
 import { useState } from 'react';
+
+import { FiSearch } from 'react-icons/fi';
+
+import styles from './SearchForm.module.css';
 
 const regions = [
   { id: 'africa', value: 'africa', name: 'Africa' },
@@ -27,7 +29,6 @@ export const SearchForm = ({ onSubmit }) => {
       <button className={styles.button} type="submit">
         <FiSearch size="16px" />
       </button>
-
       <select
         aria-label="select"
         className={styles.select}

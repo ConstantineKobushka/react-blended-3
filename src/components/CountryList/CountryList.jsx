@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+
 import { Grid, GridItem } from 'components';
 
 export const CountryList = ({ countries }) => {

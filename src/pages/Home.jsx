@@ -1,8 +1,10 @@
-import { Container, CountryList, Heading, Loader, Section } from 'components';
 import { useEffect, useState } from 'react';
+
+import { Container, CountryList, Heading, Loader, Section } from 'components';
+
 import { getCountries } from 'service/countryApi';
 
-export const Home = () => {
+const Home = () => {
   const [countries, setCountries] = useState([]);
   const [loader, setLoader] = useState(false);
   const [error, setError] = useState('');
@@ -20,7 +22,7 @@ export const Home = () => {
         setLoader(false);
       }
     };
-    0;
+
     fetchCountries();
   }, []);
 
@@ -34,3 +36,5 @@ export const Home = () => {
     </Section>
   );
 };
+
+export default Home;

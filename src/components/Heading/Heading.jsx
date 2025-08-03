@@ -1,5 +1,6 @@
-import styles from './Heading.module.css';
 import clsx from 'clsx';
+
+import styles from './Heading.module.css';
 
 export const Heading = ({ title, top, bottom }) => {
   return (
