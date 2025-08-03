@@ -72,7 +72,7 @@
 ### 📦 Встановлення:
 
 ```bash
-git clone https://github.com/ConstantineKobushka/country-explorer.git
+git clone https://github.com/ConstantineKobushka/react-blended-3
 cd country-explorer
 npm install
 ```
