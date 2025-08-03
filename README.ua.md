@@ -66,4 +66,13 @@
 
 ### 🔧 Вимоги:
 
-- Node.js (рекомендована останн
+- Node.js (рекомендована остання LTS-версія)
+- npm або yarn
+
+### 📦 Встановлення:
+
+```bash
+git clone https://github.com/ConstantineKobushka/country-explorer.git
+cd country-explorer
+npm install
+```
