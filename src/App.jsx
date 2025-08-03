@@ -5,13 +5,13 @@ const Home = lazy(() => import('pages/Home'));
 const Country = lazy(() => import('pages/Country'));
 const SearchCountry = lazy(() => import('pages/SearchCountry'));
 
-import { Header } from './components';
+import { Header, Loader } from './components';
 
 export const App = () => {
   return (
     <>
       <Header />
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<Loader />}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/country" element={<SearchCountry />} />

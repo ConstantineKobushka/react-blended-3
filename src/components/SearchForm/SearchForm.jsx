@@ -27,7 +27,7 @@ export const SearchForm = ({ onSubmit }) => {
   return (
     <form onSubmit={onHandleSubmit} className={styles.form}>
       <button className={styles.button} type="submit">
-        <FiSearch size="16px" />
+        <FiSearch size="25px" />
       </button>
       <select
         aria-label="select"

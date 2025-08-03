@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-import { useSearchParams } from 'react-router-dom';
+import { useLocation, useSearchParams } from 'react-router-dom';
 
 import {
   Container,
@@ -18,6 +18,7 @@ const SearchCountry = () => {
   const [loader, setLoader] = useState(false);
   const [error, setError] = useState('');
   const [searchParams, setSearchParams] = useSearchParams();
+  const location = useLocation();
 
   useEffect(() => {
     const region = searchParams.get('region');
@@ -50,7 +51,12 @@ const SearchCountry = () => {
         <SearchForm onSubmit={onSubmit} />
         {error && <Heading title={error} bottom />}
         {loader && <Loader />}
-        <CountryList countries={countries} />
+        <CountryList
+          countries={countries}
+          state={{
+            from: location,
+          }}
+        />
       </Container>
     </Section>
   );

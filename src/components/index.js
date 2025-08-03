@@ -9,3 +9,4 @@ export * from './CountryList/CountryList';
 export * from './SearchForm/SearchForm';
 export * from './CountryInfo/CountryInfo';
 export * from './GoBackBtn/GoBackBtn';
+export * from './ErrorMessage/ErrorMessage';

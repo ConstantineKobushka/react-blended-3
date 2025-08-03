@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { useLocation } from 'react-router-dom';
 
 import { Container, CountryList, Heading, Loader, Section } from 'components';
 
@@ -8,6 +9,7 @@ const Home = () => {
   const [countries, setCountries] = useState([]);
   const [loader, setLoader] = useState(false);
   const [error, setError] = useState('');
+  const location = useLocation();
 
   useEffect(() => {
     const fetchCountries = async () => {
@@ -31,7 +33,12 @@ const Home = () => {
       <Container>
         {error && <Heading title={error} bottom />}
         {loader && <Loader />}
-        <CountryList countries={countries} />
+        <CountryList
+          countries={countries}
+          state={{
+            from: location,
+          }}
+        />
       </Container>
     </Section>
   );

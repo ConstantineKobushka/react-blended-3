@@ -16,3 +16,7 @@
 .bottom {
   margin-bottom: 50px;
 }
+
+.color {
+  color: var(--color-white);
+}

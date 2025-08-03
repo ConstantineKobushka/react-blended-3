@@ -1,4 +1,4 @@
-.link {
+.btn {
   color: var(--color-white);
   display: inline-block;
   letter-spacing: 0.06em;
@@ -9,7 +9,7 @@
   transition: background-color var(--animation-cubicBezie);
 }
 
-.link:hover,
-.link:focus {
+.btn:hover,
+.btn:focus {
   background-color: var(--color-imageBackground);
 }

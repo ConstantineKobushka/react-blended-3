@@ -18,7 +18,11 @@
 
   position: absolute;
   top: 0;
-  right: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .select {
@@ -30,7 +34,7 @@
   background-color: var(--color-gray);
   border-radius: 8px;
 
-  padding: 10px;
+  padding: 10px 10px 10px 60px;
   font-size: 16px;
   outline: none;
   letter-spacing: 0.06em;
